@@ -1,11 +1,11 @@
 'use strict';
 (function(module) {
   try {
-    module = angular.module('tink.skeleton');
+    module = angular.module('tink.collapsabletable');
   } catch (e) {
-    module = angular.module('tink.skeleton', []);
+    module = angular.module('tink.collapsabletable', []);
   }
-  module.directive('tinkSkeleton', [function () {
+  module.directive('tinkCollapsableTable', [function () {
     return {
       restrict: 'EA',
       scope: {

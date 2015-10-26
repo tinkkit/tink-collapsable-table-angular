@@ -1,5 +1,5 @@
 'use strict';
-describe('tink-skeleton-angular', function() {
+describe('tink-collapsable-table-angular', function() {
 
   var bodyEl = $('body'), sandboxEl;
   var $compile, $templateCache, scope;
