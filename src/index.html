@@ -45,10 +45,10 @@
             <td class="no-border"></td>
             <td colspan="4">
               <div data-ng-if="i.collapsed">
-                {{i.summary | limitTo:200}}<span data-ng-if="i.summary.length > 200">…<br><a href="javascript:" data-ng-click="i.collapsed = !i.collapsed">Toon volledig advies</a></span>
+                {{i.summary | limitTo:200}}<span data-ng-if="i.summary.length > 200">…<br><a href="javascript:" class="link-details" data-ng-click="i.collapsed = !i.collapsed">Toon volledig advies</a></span>
               </div>
               <div data-ng-if="!i.collapsed">
-                {{i.summary}}<br><a href="javascript:" data-ng-click="i.collapsed = !i.collapsed">Verberg details</a></span>
+                {{i.summary}}<br><a href="javascript:" class="link-details" data-ng-click="i.collapsed = !i.collapsed">Verberg details</a></span>
               </div>
             </td>
           </tr>
