@@ -14,4 +14,9 @@
     display: inline-block;
     margin-top: rem(8);
   }
+
+  .advice {
+    transform: scale(1.25);
+    transform-origin: 0 center;
+  }
 }

@@ -35,7 +35,7 @@
             <td><strong>{{i.lastname}}</strong> {{i.firstname}} <div class="badge-info" data-ng-if="i.extra !== ''">+{{i.extra}}</div></td>
             <td>{{i.filenr}}</td>
             <td>{{i.notes}}</td>
-            <td>
+            <td class="advice">
               <i class="fa fa-thumbs-up text-success"data-ng-if="i.advice === 1"><span class="sr-only">Goed</span></i>
               <i class="fa fa-thumbs-down text-danger"data-ng-if="i.advice === 2"><span class="sr-only">Niet goed</span></i>
               <i class="fa fa-question text-warning"data-ng-if="i.advice !== 1 && i.advice !== 2"><span class="sr-only">Niet duidelijk</span></i>
