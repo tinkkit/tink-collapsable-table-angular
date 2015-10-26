@@ -3,10 +3,17 @@
 @import "../../bower_components/tink-core/dist/tink/functions";
 @import "../../bower_components/tink-core/dist/tink/mixins";
 
-.collapsable-table {
-  table > tbody > tr > td {
-    &.no-border {
-      border-top: none;
+table.collapsable-table {
+  > tbody {
+
+    + tbody {
+      border-top: 1px solid $table-border-color;
+    }
+
+    > tr > td {
+      &.no-border {
+        border-top: none;
+      }
     }
   }
 

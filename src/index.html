@@ -16,7 +16,10 @@
 <div class="main">
   <div class="container">
     <div class="col-xs-12 margin-top">
-      <p class="text-right"></p>
+      <div class="checkbox pull-right">
+        <input type="checkbox" id="checkbox1" name="checkbox1" value="" checked="" data-ng-click="showSummary =! showSummary">
+        <label for="checkbox1">Toon adviezen</label>
+      </div>
     </div>
     <div class="col-xs-12 margin-top">
       <table class="collapsable-table">
@@ -41,7 +44,7 @@
               <i class="fa fa-question text-warning"data-ng-if="i.advice !== 1 && i.advice !== 2"><span class="sr-only">Niet duidelijk</span></i>
             </td>
           </tr>
-          <tr data-ng-class-odd="'tink-bg-white'" data-ng-class-even="'tink-bg-gray-lightest'">
+          <tr data-ng-class-odd="'tink-bg-white'" data-ng-class-even="'tink-bg-gray-lightest'" data-ng-if="showSummary">
             <td class="no-border"></td>
             <td colspan="4">
               <div data-ng-if="i.collapsed">
@@ -115,9 +118,7 @@
       }
     ];
 
-    scope.toggleSummary = function toggleSummary() {
-      console.log('toggle');
-    };
+    scope.showSummary = true;
 
   }]);
 </script>
