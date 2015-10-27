@@ -1,0 +1,2 @@
+table.collapsable-table>tbody+tbody{border-top:1px solid #bbb}table.collapsable-table>tbody>tr>td.no-border{border-top:none}table.collapsable-table .link-details{display:inline-block;margin-top:.57143rem}table.collapsable-table .advice{-webkit-transform:scale(1.25);-ms-transform:scale(1.25);transform:scale(1.25);-webkit-transform-origin:0 center;-ms-transform-origin:0 center;transform-origin:0 center}
+/*# sourceMappingURL=tink-collapsable-table.min.css.map */
